@@ -4,10 +4,12 @@
     --secondary-color: #dcd8c0;
     --text-color: #454138;
     --selected-color: #bab5a1;
+    --page-margin: 25px;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
     background-color: var(--main-color);
     background-size: 5px 5px;
     background-image: linear-gradient(to right, var(--line-color) 1px, #00000000 1px), linear-gradient(to bottom, var(--line-color) 1px, #00000000 1px);
@@ -20,7 +22,50 @@ body {
     text-shadow: 4px 4px 0 #bab5a1;
 }
 
+header {
+    border-top: 2px solid var(--text-color);
+    margin: var(--page-margin);
+}
+
+header h1 {
+    display: inline-block;
+    margin: 25px;
+}
+
 #header-links {
+    float: right;
     list-style-type: none;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+#header-links li {
     display: inline;
+}
+
+/* This section makes the bottom border for the header links expand on hover as well as sets other attributes */
+/* Help with expanding link border gotten from: https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border */
+#header-links a {
+    text-decoration: none;
+    color: var(--text-color);
+
+    display: inline-block;
+    background-image: linear-gradient(var(--text-color), var(--text-color));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    margin: 5px 10px;
+    transition: background-size 0.25s;
+}
+
+#header-links a:hover {
+    background-size: 100% 2px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+    display: block;
+    width: calc(100% - var(--page-margin) * 2);
+    margin: var(--page-margin);
+    background-color: var(--secondary-color);
 }
