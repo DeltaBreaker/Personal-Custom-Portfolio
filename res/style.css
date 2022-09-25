@@ -1,0 +1,26 @@
+:root {
+    --main-color: #d1cdb7;
+    --line-color: #ccc8b1;
+    --secondary-color: #dcd8c0;
+    --text-color: #454138;
+    --selected-color: #bab5a1;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--main-color);
+    background-size: 5px 5px;
+    background-image: linear-gradient(to right, var(--line-color) 1px, #00000000 1px), linear-gradient(to bottom, var(--line-color) 1px, #00000000 1px);
+}
+
+.main-header {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 8px;
+    text-shadow: 4px 4px 0 #bab5a1;
+}
+
+#header-links {
+    list-style-type: none;
+    display: inline;
+}
