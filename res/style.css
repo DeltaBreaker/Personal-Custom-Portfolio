@@ -37,7 +37,7 @@ header {
 
 header h1 {
     display: inline-block;
-    margin: 25px;
+    margin-top: 25px;
 }
 
 #header-links {
@@ -110,10 +110,10 @@ work-containers {
 }
 
 .sub-container {
-    flex: 0 1 600px;
+    flex: 0 1 550px;
     /* Change height to 52 if you ever prefer animated drop down boxes */
-    height: 600px;
-    max-height: 600px;
+    height: 327px;
+    max-height: 700px;
     transition: height 0.25s ease-in-out;
 
     background-color: var(--secondary-color);
@@ -123,7 +123,7 @@ work-containers {
 }
 
 .sub-container:hover {
-    height: 600px;
+    height: 700px;
 }
 
 .sub-container p {
@@ -131,18 +131,14 @@ work-containers {
     overflow: auto;
 }
 
-.sub-container p img {
-    float: right;
-    width: 100px;
-    height: 100px;
+.sub-container img {
+    width: 100%;
+    height: auto;
     transition: all 0.25s ease-in-out;
-    box-shadow: 5px 5px 0px var(--selected-color);
 }
 
-.sub-container p img:hover {
-    width: 100%;
-    height: 100%;
-    margin-bottom: var(--container-margin);
+.sub-container img:hover {
+    cursor: pointer;
 }
 
 .sub-container hr {
@@ -185,16 +181,42 @@ contact-information-container {
 }
 
 info-container {
+    display: flex;
     width: 100px;
     height: 24px;
     margin-bottom: var(--container-margin);
     box-shadow: 5px 5px 0px var(--selected-color);
+    background-color: var(--secondary-color);
+    transition: width 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+info-container:hover {
+    width: 350px;
 }
 
 .info-header {
+    flex: 0 0 100px;
+    width: 100px;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+info-container a {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+info-container p {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: var(--text-color);
+    font-weight: lighter;
 }
 
 /* This keeps the footer at the bottom without overlapping content and sets the border */
@@ -202,7 +224,7 @@ footer {
     width: calc(100% - var(--page-margin) * 2);
     border-top: 2px solid var(--text-color);
     margin-left: var(--page-margin);
-    margin-top: auto;
+    margin-top: var(--page-margin);
     padding-bottom: var(--page-margin);
 }
 /*-------------------------------------------------------------------------------------*/
