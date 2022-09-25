@@ -96,14 +96,14 @@ header h1 {
 
 #about-me img {
     float: right;
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: 10%;
     margin-bottom: var(--container-margin);
     box-shadow: 5px 5px 0px var(--selected-color);
 }
 
-/* This fixes the alignment issues that were present from making the screen too small */
 @media screen and (max-width: 805px) {
+    /* This fixes the alignment issues that were present from making the screen too small */
     #main-header {
         width: calc(100% - var(--page-margin) * 2);
         text-align: center;
@@ -114,5 +114,10 @@ header h1 {
         width: 50%;
         margin: auto;
     }
+    /*-----------------------------------------------------------------------------------*/
+
+    #about-me img {
+        width: 20%;
+        height: 20%;
+    }
 }
-/*-----------------------------------------------------------------------------------*/
