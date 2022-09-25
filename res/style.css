@@ -251,12 +251,15 @@ footer {
 @media screen and (max-width: 805px) {
     /* This fixes the alignment issues that were present from making the screen too small */
     #main-header {
-        width: calc(100% - var(--page-margin) * 2);
+        position: relative;
+        left: 50%;
         text-align: center;
+        transform: translate(-50%, 0);
     }
 
     #header-links {
         float: none;
+        padding: 0;
         width: 50%;
         margin: auto;
     }
