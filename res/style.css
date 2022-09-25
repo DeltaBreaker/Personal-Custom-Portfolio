@@ -102,6 +102,15 @@ header h1 {
     box-shadow: 5px 5px 0px var(--selected-color);
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - var(--page-margin) * 2);
+    height: var(--page-margin);
+    border-top: 2px solid var(--text-color);
+    margin-left: var(--page-margin);
+}
+
 @media screen and (max-width: 805px) {
     /* This fixes the alignment issues that were present from making the screen too small */
     #main-header {
