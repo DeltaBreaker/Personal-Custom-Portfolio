@@ -9,11 +9,17 @@
 }
 
 body {
+    /* This sets up the body to allow for a sticky footer */
+    display: flex;
+    flex-direction: column;
+    /*----------------------------------------------------*/
+
     font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 0.5px;
     background-color: var(--main-color);
     background-size: 5px 5px;
     background-image: linear-gradient(to right, var(--line-color) 1px, #00000000 1px), linear-gradient(to bottom, var(--line-color) 1px, #00000000 1px);
+    height: calc(100vh - var(--page-margin));
 }
 
 .header {
@@ -102,14 +108,14 @@ header h1 {
     box-shadow: 5px 5px 0px var(--selected-color);
 }
 
+/* This keeps the footer at the bottom without overlapping content and sets the border */
 footer {
-    position: fixed;
-    bottom: 0;
     width: calc(100% - var(--page-margin) * 2);
-    height: var(--page-margin);
     border-top: 2px solid var(--text-color);
     margin-left: var(--page-margin);
+    margin-top: auto;
 }
+/*-------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 805px) {
     /* This fixes the alignment issues that were present from making the screen too small */
