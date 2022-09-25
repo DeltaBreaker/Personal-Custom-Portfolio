@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio for William Crain</title>
+        <!-- normalize.css gotten from https://necolas.github.io/normalize.css/-->
         <link rel="stylesheet" type="text/css" href="./res/normalize.css">
         <link rel="stylesheet" type="text/css" href="./res/style.css">
     </head>
@@ -11,9 +12,9 @@
             <header>
                 <h1 class="header" id="main-header">William Crain</h1>
                 <ul id="header-links">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#my-work">My Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="#about-me" class="link">About Me</a></li>
+                    <li><a href="#my-work" class="link">My Work</a></li>
+                    <li><a href="#contact-me" class="link">Contact Me</a></li>
                 </ul>
             </header>
             <about-me-container class="main-container" id="about-me">
@@ -24,19 +25,77 @@
                     Some random stuff about myself that I have yet to write here
                 </p>
             </about-me-container>
-            <my-work-container class="main-container" id="my-work">
+            <my-work-container id="my-work">
                 <h2 class="header">My Work</h2>
-                <hr/>
-                <p>
-                    Work sub containers go here
-                </p>
             </my-work-container>
-            <contact-me-container class="main-container" id="contact-me">
+            <work-containers>
+                <lolorito-container class="sub-container">
+                    <h3 class="sub-header">FFXIV Market Data Tool</h3>
+                    <p>
+                        Written in: Java
+                    </p>
+                    <hr/>
+                    <p>
+                        <img src="https://user-images.githubusercontent.com/6527156/188293104-4986077c-2f57-426d-b1c6-4a3e92ba79f6.png" alt="Example selected image of the program"/>
+                        This program downloads community-collected data for the in game market of Final Fantasy XIV from
+                        <a href="https://universalis.app/" target="_blank" class="link">Universalis</a>
+                        then sifts through everything to find the most profitable items to sell.
+                    </p>
+                    <hr/>
+                    <h4>Resources:</h4>
+                    <ul>
+                        <li><a href="https://github.com/DeltaBreaker/Lolorito" target="_blank" class="link">Repository</a></li>
+                        <li><a href="https://github.com/DeltaBreaker/Lolorito/releases" target="_blank" class="link">Releases</a></li>
+                    </ul>
+                </lolorito-container>
+                <placeholder-container class="sub-container">
+                    <h3 class="sub-header">Placeholder</h3>
+                    <p>
+                        Written in:
+                    </p>
+                    <hr/>
+                    <p>
+                        <img src="https://via.placeholder.com/200x100" alt="Placeholder"/>
+                        Short descriptive text goes here with a small 100x100 preview image that expands on hover
+                    </p>
+                    <hr/>
+                    <h4>Resources:</h4>
+                    <ul>
+                        <li><a href="" target="_blank" class="link">Repository</a></li>
+                        <li><a href="" target="_blank" class="link">Releases</a></li>
+                    </ul>
+                </placeholder-container>
+                <placeholder-container class="sub-container">
+                    <h3 class="sub-header">Placeholder</h3>
+                    <p>
+                        Written in:
+                    </p>
+                    <hr/>
+                    <p>
+                        <img src="https://via.placeholder.com/200x100" alt="Placeholder"/>
+                        Short descriptive text goes here with a small 100x100 preview image that expands on hover
+                    </p>
+                    <hr/>
+                    <h4>Resources:</h4>
+                    <ul>
+                        <li><a href="" target="_blank" class="link">Repository</a></li>
+                        <li><a href="" target="_blank" class="link">Releases</a></li>
+                    </ul>
+                </placeholder-container>
+            </work-containers>
+            <contact-me-container id="contact-me">
                 <h2 class="header">Contact Me</h2>
-                <hr/>
-                <p>
-                    Contact form and information goes here
-                </p>
+                <contact-information-container>
+                    <info-container class="info-container">
+                        <h3 class="sub-header info-header">Email</h3>
+                    </info-container>
+                    <info-container class="info-container">
+                        <h3 class="sub-header info-header">Phone</h3>
+                    </info-container>
+                    <info-container class="info-container">
+                        <h3 class="sub-header info-header">Github</h3>
+                    </info-container>
+                </contact-information-container>
             </contact-me-container>
         </content-container>
         <footer>
