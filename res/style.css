@@ -211,12 +211,16 @@ info-container {
     margin-bottom: var(--container-margin);
     box-shadow: 5px 5px 0px var(--selected-color);
     background-color: var(--secondary-color);
-    transition: width 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     overflow: hidden;
+
+    position: relative;
+    border-right: 0px solid var(--text-color);
 }
 
 info-container:hover {
     width: 350px;
+    border-width: 2px;
 }
 
 .info-header {
