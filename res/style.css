@@ -22,6 +22,10 @@ body {
     height: calc(100vh - var(--page-margin));
 }
 
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
 /* Sets up the main page header at the top of the page */
 .header {
     text-transform: uppercase;
@@ -118,7 +122,7 @@ work-containers {
     flex: 0 1 550px;
     /* Change height to 52 if you ever prefer animated drop down boxes */
     height: 327px;
-    max-height: 600px;
+    max-height: 650px;
     transition: height 0.25s ease-in-out;
 
     background-color: var(--secondary-color);
