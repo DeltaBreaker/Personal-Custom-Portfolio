@@ -119,11 +119,9 @@ work-containers {
 }
 
 .sub-container {
-    flex: 0 1 550px;
+    flex: 0 1 50%;
     /* Change height to 52 if you ever prefer animated drop down boxes */
-    height: 327px;
-    max-height: 650px;
-    transition: height 0.25s ease-in-out;
+    height: auto;
 
     background-color: var(--secondary-color);
     box-shadow: 5px 5px 0px var(--selected-color);
@@ -133,19 +131,9 @@ work-containers {
 
 /* Specific attributes given to the first work container */
 #first-container {
-    flex: 0 1 700px;
-    height: 447px;
-    max-height: 700px;
-}
-
-#first-container:hover {
-    height: 700px;
+    flex: 0 1 75%;
 }
 /*-------------------------------------------------------*/
-
-.sub-container:hover {
-    height: 700px;
-}
 
 .sub-container p {
     margin: var(--container-margin);
@@ -300,7 +288,7 @@ footer {
     }
 
     .sub-container {
-        flex: 1 1 400px;
+        flex: 1 1 50%;
     }
 
 }
