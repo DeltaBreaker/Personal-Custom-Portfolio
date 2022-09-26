@@ -22,6 +22,7 @@ body {
     height: calc(100vh - var(--page-margin));
 }
 
+/* Sets up the main page header at the top of the page */
 .header {
     text-transform: uppercase;
     font-weight: normal;
@@ -54,7 +55,9 @@ header h1 {
 #header-links a {
     margin: 5px 10px;
 }
+/*-----------------------------------------------------*/
 
+/* This sets up the main container class used to display the about me section */
 .main-container {
     display: block;
     width: calc(100% - var(--page-margin) * 2);
@@ -96,7 +99,9 @@ header h1 {
     height: 10%;
     box-shadow: 5px 5px 0px var(--selected-color);
 }
+/*----------------------------------------------------------------------------*/
 
+/* This section is content about the work tab of the page */
 #my-work h2 {
     margin-left: var(--page-margin);
 }
@@ -113,7 +118,7 @@ work-containers {
     flex: 0 1 550px;
     /* Change height to 52 if you ever prefer animated drop down boxes */
     height: 327px;
-    max-height: 700px;
+    max-height: 600px;
     transition: height 0.25s ease-in-out;
 
     background-color: var(--secondary-color);
@@ -121,6 +126,18 @@ work-containers {
 
     overflow: hidden;
 }
+
+/* Specific attributes given to the first work container */
+#first-container {
+    flex: 0 1 700px;
+    height: 447px;
+    max-height: 700px;
+}
+
+#first-container:hover {
+    height: 700px;
+}
+/*-------------------------------------------------------*/
 
 .sub-container:hover {
     height: 700px;
@@ -139,6 +156,7 @@ work-containers {
 
 .sub-container img:hover {
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .sub-container hr {
@@ -167,7 +185,9 @@ work-containers {
     margin: 0;
     padding: var(--container-margin);
 }
+/*--------------------------------------------*/
 
+/* Sets up the contact info and containers */
 #contact-me h2 {
     margin-left: var(--page-margin);
 }
@@ -218,13 +238,14 @@ info-container p {
     color: var(--text-color);
     font-weight: lighter;
 }
+/*-----------------------------------------*/
 
 /* This keeps the footer at the bottom without overlapping content and sets the border */
 footer {
     width: calc(100% - var(--page-margin) * 2);
     border-top: 2px solid var(--text-color);
     margin-left: var(--page-margin);
-    margin-top: var(--page-margin);
+    margin-top: auto;
     padding-bottom: var(--page-margin);
 }
 /*-------------------------------------------------------------------------------------*/
