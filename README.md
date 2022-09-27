@@ -4,7 +4,7 @@ This project was started as a way to both showcase my best work as well as to pr
 
 ## Details
 
-Currently this page is written with just HTML and CSS but there are plans to add functionality and styling with JS in the near future.
+Currently this page is written with just HTML and CSS but there are plans to add functionality and styling with JS in the near future. Flex is used to dynamically adjust the work cards with other animated elements using standard CSS tricks.
 A [normalization CSS file](https://necolas.github.io/normalize.css/) is loaded to ensure parity across web browsers before personal styling is loaded.
 
 ## Preview
