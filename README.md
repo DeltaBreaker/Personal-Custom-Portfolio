@@ -11,4 +11,5 @@ A [normalization CSS file](https://necolas.github.io/normalize.css/) is loaded t
 ![image](https://user-images.githubusercontent.com/6527156/192413736-d04fef92-5d35-4899-b292-03cbaeb0f3ba.png)
 
 ## Deployment
-You can view the full website [here](https://deltabreaker.github.io/Personal-Custom-Portfolio/)
+You can view the full website here:
+(https://deltabreaker.github.io/Personal-Custom-Portfolio/)
