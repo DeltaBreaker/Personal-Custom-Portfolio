@@ -1,0 +1,377 @@
+:root {
+    --main-color: #d1cdb7;
+    --line-color: #ccc8b1;
+    --secondary-color: #dcd8c0;
+    --text-color: #454138;
+    --selected-color: #bab5a1;
+    --page-margin: 25px;
+    --container-margin: 15px;
+}
+
+body {
+    /* This sets up the body to allow for a sticky footer */
+    display: flex;
+    flex-direction: column;
+    /*----------------------------------------------------*/
+
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    background-color: var(--main-color);
+    background-size: 5px 5px;
+    background-image: linear-gradient(to right, var(--line-color) 1px, #00000000 1px), linear-gradient(to bottom, var(--line-color) 1px, #00000000 1px);
+    height: calc(100vh - var(--page-margin));
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+/* Sets up the main page header at the top of the page */
+.header {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 8px;
+    text-shadow: 4px 4px 0 var(--selected-color);
+    color: var(--text-color);
+}
+
+header {
+    border-top: 2px solid var(--text-color);
+    margin: var(--page-margin);
+}
+
+header h1 {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#header-links {
+    float: right;
+    list-style-type: none;
+    margin-top: 31px;
+    margin-right: 25px;
+}
+
+#header-links li {
+    display: inline;
+}
+
+#header-links a {
+    margin: 5px 10px;
+}
+/*-----------------------------------------------------*/
+
+/* This sets up the main container class used to display the about me section */
+.main-container {
+    display: block;
+    width: calc(100% - var(--page-margin) * 2);
+    margin: var(--page-margin);
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 0px var(--selected-color);
+    padding-bottom: var(--container-margin);
+}
+
+.main-container h2 {
+    padding: var(--container-margin);
+    padding-bottom: 0;
+}
+
+.main-container h3 {
+    padding: var(--container-margin);
+    padding-bottom: 0;
+}
+
+.main-container hr {
+    border: 0px;
+    border-bottom: 1px solid var(--text-color);
+    margin-left: var(--container-margin);
+    margin-right: var(--container-margin);
+}
+
+.main-container p {
+    padding: var(--container-margin);
+    padding-top: 0;
+}
+
+.main-container input {
+    margin: var(--container-margin);
+    margin-top: 0;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+form {
+    display: block;
+    margin: var(--container-margin);
+}
+
+form fieldset {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border: 0.1rem solid var(--selected-color);
+}
+
+fieldset legend {
+    display: block;
+    padding: 0 0.5rem;
+}
+
+.contact-input label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.contact-input input {
+    width: 98%;
+    padding: 0.5rem;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-color: #dcd8c0;
+    color: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    font-weight: inherit;
+    box-shadow: 5px 5px 0px var(--selected-color);
+}
+
+.contact-input textarea{
+    width: 98%;
+    padding: 0.5rem;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-color: #dcd8c0;
+    color: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    font-weight: inherit;
+    box-shadow: 5px 5px 0px var(--selected-color);
+}
+
+.button {
+    width: 100%;
+    height: 30px;
+    color: var(--text-color);
+    background-color: var(--selected-color);
+    border: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+    color: var(--main-color)
+}
+
+#about-me {
+    overflow: auto;
+}
+
+#about-me h2 {
+    padding-top: 0;
+    margin-top: var(--container-margin);
+}
+
+#about-me img {
+    float: right;
+    width: 10%;
+    height: 10%;
+    box-shadow: 5px 5px 0px var(--selected-color);
+}
+/*----------------------------------------------------------------------------*/
+
+/* This section is content about the work tab of the page */
+#my-work h2 {
+    margin-left: var(--page-margin);
+}
+
+work-containers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: var(--page-margin);
+    margin-right: var(--page-margin);
+}
+
+.sub-container {
+    flex: 0 1 50%;
+    /* Change height to 52 if you ever prefer animated drop down boxes */
+    height: auto;
+
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 0px var(--selected-color);
+
+    overflow: hidden;
+}
+
+/* Specific attributes given to the first work container */
+#first-container {
+    flex: 0 1 75%;
+}
+/*-------------------------------------------------------*/
+
+.sub-container p {
+    margin: var(--container-margin);
+    overflow: auto;
+}
+
+.sub-container img {
+    width: 100%;
+    height: auto;
+    transition: all 0.25s ease-in-out;
+}
+
+.sub-container img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.sub-container hr {
+    border: 0px;
+    border-bottom: 1px solid var(--text-color);
+    margin-left: var(--container-margin);
+    margin-right: var(--container-margin);
+}
+
+.sub-container h4 {
+    margin-left: var(--container-margin);
+    font-weight: normal;
+}
+
+.sub-container ul {
+    margin-left: var(--container-margin);
+    list-style-type: square;
+}
+
+.sub-header {
+    text-align: center;
+    font-weight: normal;
+    font-size: 19px;
+    color: var(--selected-color);
+    background-color: var(--text-color);
+    margin: 0;
+    padding: var(--container-margin);
+}
+/*--------------------------------------------*/
+
+/* Sets up the contact info and containers */
+#contact-me h2 {
+    margin-left: var(--page-margin);
+}
+
+contact-information-container {
+    margin-left: var(--page-margin);
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+info-container {
+    display: flex;
+    width: 100px;
+    height: 24px;
+    margin-bottom: var(--container-margin);
+    box-shadow: 5px 5px 0px var(--selected-color);
+    background-color: var(--secondary-color);
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+
+    position: relative;
+    border-right: 0px solid var(--text-color);
+}
+
+info-container:hover {
+    width: 350px;
+    border-width: 2px;
+}
+
+.info-header {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+info-container a {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+info-container p {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: var(--text-color);
+    font-weight: lighter;
+}
+/*-----------------------------------------*/
+
+/* This keeps the footer at the bottom without overlapping content and sets the border */
+footer {
+    width: calc(100% - var(--page-margin) * 2);
+    border-top: 2px solid var(--text-color);
+    margin-left: var(--page-margin);
+    margin-top: auto;
+    padding-bottom: var(--page-margin);
+}
+/*-------------------------------------------------------------------------------------*/
+
+/* This section makes the bottom border for links expand on hover as well as sets other attributes */
+/* Help with expanding link border gotten from: https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border */
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+
+    display: inline-block;
+    background-image: linear-gradient(var(--text-color), var(--text-color));
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    transition: background-size 0.25s;
+}
+
+.link:hover {
+    background-size: 100% 1px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 805px) {
+    /* This fixes the alignment issues that were present from making the screen too small */
+    #main-header {
+        position: relative;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    #header-links {
+        float: none;
+        padding: 0;
+        width: 50%;
+        margin: auto;
+    }
+    /*-----------------------------------------------------------------------------------*/
+
+    #about-me img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .sub-container {
+        flex: 1 1 50%;
+    }
+
+}
