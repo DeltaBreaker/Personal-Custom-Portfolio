@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/DeltaBreaker/Personal-Custom-Portfolio/static/js/main.ce123e99.js",
-    "index.html": "/DeltaBreaker/Personal-Custom-Portfolio/index.html",
-    "main.ce123e99.js.map": "/DeltaBreaker/Personal-Custom-Portfolio/static/js/main.ce123e99.js.map"
+    "main.js": "/Personal-Custom-Portfolio/static/js/main.e3468e50.js",
+    "index.html": "/Personal-Custom-Portfolio/index.html",
+    "main.e3468e50.js.map": "/Personal-Custom-Portfolio/static/js/main.e3468e50.js.map"
   },
   "entrypoints": [
-    "static/js/main.ce123e99.js"
+    "static/js/main.e3468e50.js"
   ]
 }

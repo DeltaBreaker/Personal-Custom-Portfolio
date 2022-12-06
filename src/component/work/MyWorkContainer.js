@@ -36,7 +36,7 @@ const WORKS = [
 export default function MyWorkHeader() {
   let workContainers = [];
   for (const work of WORKS) {
-    workContainers.push(<WorkContainer {...work} />);
+    workContainers.push(<WorkContainer {...work} key="mywork" />);
   }
 
   return [

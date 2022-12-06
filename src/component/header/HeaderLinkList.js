@@ -1,24 +1,30 @@
 import HeaderLink from "./HeaderLink.js";
+import AboutMeContainer from "../AboutMeContainer.js";
+import MyWorkContainer from "../work/MyWorkContainer.js";
+import ContactForm from "../info/ContactForm.js";
 
 const LINK_DATA = [
   {
-    href: "#about-me",
+    href: "#",
     text: "About Me",
+    state: <AboutMeContainer />,
   },
   {
-    href: "#my-work",
+    href: "#",
     text: "My Work",
+    state: <MyWorkContainer />,
   },
   {
-    href: "#contact-me",
+    href: "#",
     text: "Contact Me",
+    state: <ContactForm />,
   },
 ];
 
-export default function HeaderLinkList() {
+export default function HeaderLinkList(props) {
   let links = [];
   for (const link of LINK_DATA) {
-    links.push(<HeaderLink {...link} />);
+    links.push(<HeaderLink {...link} {...props} key={link.text} />);
   }
   return <ul id="header-links">{links}</ul>;
 }
