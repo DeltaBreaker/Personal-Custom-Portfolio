@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Personal-Custom-Portfolio/static/js/main.e3468e50.js",
+    "main.js": "/Personal-Custom-Portfolio/static/js/main.85f787a9.js",
     "index.html": "/Personal-Custom-Portfolio/index.html",
-    "main.e3468e50.js.map": "/Personal-Custom-Portfolio/static/js/main.e3468e50.js.map"
+    "main.85f787a9.js.map": "/Personal-Custom-Portfolio/static/js/main.85f787a9.js.map"
   },
   "entrypoints": [
-    "static/js/main.e3468e50.js"
+    "static/js/main.85f787a9.js"
   ]
 }
