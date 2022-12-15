@@ -3,6 +3,12 @@ import WorkContainer from "./WorkContainer.js";
 const WORKS = [
   {
     first: true,
+    name: "GiveDex",
+    link: "https://github.com/dpackaz/gamifying-giving",
+    src: "https://github.com/dpackaz/gamifying-giving/blob/main/client/public/givdex-overview.gif?raw=true",
+  },
+  {
+    first: false,
     name: "Wish List",
     link: "https://github.com/AJManzione/wish-list",
     src: "res/image/wishlist.png",
