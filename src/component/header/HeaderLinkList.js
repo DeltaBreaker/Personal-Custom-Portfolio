@@ -1,7 +1,7 @@
 import HeaderLink from "./HeaderLink.js";
 import AboutMeContainer from "../AboutMeContainer.js";
 import MyWorkContainer from "../work/MyWorkContainer.js";
-import ContactForm from "../info/ContactForm.js";
+// import ContactForm from "../info/ContactForm.js";
 
 const LINK_DATA = [
   {
@@ -14,11 +14,11 @@ const LINK_DATA = [
     text: "My Work",
     state: <MyWorkContainer />,
   },
-  {
-    href: "#",
-    text: "Contact Me",
-    state: <ContactForm />,
-  },
+  // {
+  //   href: "#",
+  //   text: "Contact Me",
+  //   state: <ContactForm />,
+  // },
 ];
 
 export default function HeaderLinkList(props) {

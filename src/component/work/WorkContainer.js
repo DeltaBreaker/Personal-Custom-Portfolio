@@ -5,9 +5,17 @@ export default function WorkContainer(props) {
       id={props.first ? "first-container" : ""}
     >
       <h3 class="sub-header">{props.name}</h3>
-      <a href={props.link} target="_blank" rel="noreferrer">
+      <p>
         <img src={props.src} alt="Preview of the project" />
-      </a>
+        {props.desc}
+        <br></br>
+        <br></br>
+        {props.info}
+        <br></br>
+        <br></br>
+        <a href={props.link}>Source</a>
+        {props.depl ? <a href={props.depl}>View</a> : <></>}
+      </p>
     </work-container>
   );
 }
