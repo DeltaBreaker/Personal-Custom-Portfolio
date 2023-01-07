@@ -3,14 +3,9 @@ import InfoContainer from "./InfoContainer";
 const CONTACT_INFO = [
   {
     name: "LinkedIn",
-    text: "www.linkedin.com/in/wcrain",
-    href: "www.linkedin.com/in/wcrain",
+    text: "https://linkedin.com/in/wcrain",
+    href: "https://linkedin.com/in/wcrain",
     isLink: true,
-  },
-  {
-    name: "Phone",
-    text: "xxx-xxx-xxxx",
-    isLink: false,
   },
   {
     name: "Github",
@@ -27,7 +22,7 @@ export default function ContactContainer() {
   }
   return (
     <contact-me-container id="contact-me">
-      <h2 class="header">Contact Me</h2>
+      <h2 class="header">Links</h2>
       <contact-information-container>{info}</contact-information-container>
     </contact-me-container>
   );

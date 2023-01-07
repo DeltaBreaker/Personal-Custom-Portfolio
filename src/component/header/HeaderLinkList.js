@@ -14,11 +14,11 @@ const LINK_DATA = [
     text: "My Work",
     state: <MyWorkContainer />,
   },
-  {
-    href: "#",
-    text: "Contact Me",
-    state: <ContactForm />,
-  },
+  // {
+  //   href: "#",
+  //   text: "Contact Me",
+  //   state: <ContactForm />,
+  // },
 ];
 
 export default function HeaderLinkList(props) {
