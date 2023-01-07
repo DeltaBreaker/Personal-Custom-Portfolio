@@ -1,7 +1,7 @@
 import HeaderLink from "./HeaderLink.js";
 import AboutMeContainer from "../AboutMeContainer.js";
 import MyWorkContainer from "../work/MyWorkContainer.js";
-import ContactForm from "../info/ContactForm.js";
+// import ContactForm from "../info/ContactForm.js";
 
 const LINK_DATA = [
   {
