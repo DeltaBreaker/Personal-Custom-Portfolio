@@ -5,7 +5,7 @@ const WORKS = [
     name: "Attack Tactic",
     link: "https://github.com/DeltaBreaker/Attack-Tactic",
     depl: "https://store.steampowered.com/app/1472180/Attack_Tactic/",
-    src: "res/image/at.jpg",
+    src: "res/image/at.png",
     desc: `Attack Tactic is a turn-based RPG with grid-based combat developed using LWJGL 3.
     It uses a fully custom engine that allows for real time lighting and shadows
     along with high efficiency optimization techniques such as batch sorting and deferred shading.
