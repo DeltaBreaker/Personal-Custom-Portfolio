@@ -19,7 +19,7 @@ const WORKS = [
     desc: `This is a program to assist players in Final Fantasy XIV with finding the best items to sell on the in-game open market.
     Items can be sorted by potential profit, total gil made, total sold, and more.
     There and many filtering options that allow a high level of personalization in the results.`,
-    info: "Built with Java 8",
+    info: "Built with Java 8, XIVAIP, Universalis",
   },
   {
     name: "Color Finder",
